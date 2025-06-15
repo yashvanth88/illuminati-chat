@@ -16,7 +16,8 @@ function App() {
 
   useEffect(() => {
     const serverIP = window.location.hostname;
-    const wsUrl = `wss://${serverIP}:3001`;
+    //const wsUrl = `wss://${serverIP}:3001`;     // Example in App.jsx or config
+    const wsUrl = 'wss://illuminati-chat.onrender.com';
     let reconnectAttempts = 0;
     const maxReconnectAttempts = 5;
     const reconnectDelay = 3000;
