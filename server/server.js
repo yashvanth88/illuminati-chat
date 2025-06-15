@@ -16,12 +16,13 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 // SSL Configuration
-const sslOptions = {
-  key: fs.readFileSync(path.join(__dirname, 'ssl', 'server.key')),
-  cert: fs.readFileSync(path.join(__dirname, 'ssl', 'server.cert'))
-};
+// const sslOptions = {
+//   key: fs.readFileSync(path.join(__dirname, 'ssl', 'server.key')),
+//   cert: fs.readFileSync(path.join(__dirname, 'ssl', 'server.cert'))
+// };
 
-const server = require('https').createServer(sslOptions, app);
+//const server = require('https').createServer(sslOptions, app);
+const server = require('http').createServer(app);
 const wss = new WebSocket.Server({ 
   server,
   // Allow connections from any origin
