@@ -1,0 +1,83 @@
+:root {
+  font-family: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #00bfae;
+  text-decoration: inherit;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #2c5364;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: inherit;
+  color: #fff;
+  display: flex;
+  place-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #fff;
+}
+
+button {
+  border-radius: 2em;
+  border: none;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(135deg, #00bfae 0%, #2c5364 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44, 83, 100, 0.10);
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.25s;
+}
+button:hover {
+  background: linear-gradient(135deg, #2c5364 0%, #00bfae 100%);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input, textarea {
+  border-radius: 2em;
+  border: 1.5px solid #00bfae;
+  padding: 0.7em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background: rgba(255,255,255,0.97);
+  color: #232b2f;
+  box-shadow: 0 1px 4px rgba(44, 83, 100, 0.06);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #232b2f;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  }
+  a:hover {
+    color: #00bfae;
+  }
+  button {
+    background: linear-gradient(135deg, #00bfae 0%, #2c5364 100%);
+    color: #fff;
+  }
+}
